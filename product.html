@@ -1,345 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0052/7551/6995/files/LOGO_32x32.png?v=1548735766" type="image/png">
     <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
-    <title>Document</title>
+    <title>The Beauty Bundle July Fab Bag &ndash; FAB BAG</title>
     <style>
-        *{
-            /* margin: 0px;
+      * {
+        /* margin: 0px;
             padding: 0px; */
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-        #p1{
-     
-           /* border: 1px solid red; */
-           /* display: flex;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+      #p1 {
+        /* border: 1px solid red; */
+        /* display: flex;
            flex-direction: column; */
-           margin-top: 50px;
-        }
-        #box{
-            /* border: 1px solid green; */
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            /* align-items: center; */
-        }
-        .write{
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-            flex-direction: column;
-            /* justify-self: flex-start */
-        }
-        h2{
-            margin-top: 10px;
-        }
-        h1{
-            margin-top: 10px;
-        }
-        #btn{
-            height: 50px;
-            width: 110%;
-            margin-top:25px;
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            font-weight: 600;
-            cursor: pointer;
+        margin-top: 50px;
+      }
+      #box {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* align-items: center; */
+      }
+      .write {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        /* justify-self: flex-start */
+      }
+      h2 {
+        margin-top: 10px;
+      }
+      h1 {
+        margin-top: 10px;
+      }
+      #btn {
+        height: 50px;
+        width: 110%;
+        margin-top: 25px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      #home {
+        text-decoration: none;
+      }
+      #p_img {
+        height: 450px;
+        /* width:400px ; */
+      }
+      #des {
+        margin-top: 100px;
+      }
+      #social {
+        margin-top: 16px;
+        display: flex;
+        gap: 25px;
+        font-size: 25px;
+      }
+      #social a:hover {
+        color: #e5b95f;
+      }
+      .tabs {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        max-width: 50%;
+        margin-top: 100px;
+        padding: 25;
+        column-gap: 20px;
+        max-height: 800px;
+      }
+      .tabs input[type="radio"] {
+        display: none;
+      }
+      .tabs label {
+        padding: 20px;
+        /* background-color: #E5B95F; */
+        border-radius: 25px;
+      }
 
-        }
-        #home{
-            text-decoration: none;
-        }
-        #p_img{
-            height: 450px;
-            /* width:400px ; */
-        }
-        #des{
-            margin-top: 100px;
-        }
-        #social{
-            margin-top: 16px;
-            display: flex;
-            gap: 25px;
-            font-size: 25px;            
-        }
-        #social a:hover{
-            color: #E5B95F;
-        }
-        .tabs{
-            /* border: 1px solid black; */
-            display: flex;
-            flex-wrap: wrap;
-            margin: auto;
-            max-width: 50%;
-            margin-top: 100px;
-            padding: 25;
-            column-gap: 20px;
-            max-height: 800px;
-        }
-        .tabs input[type="radio"]{
-            display: none;
-        }
-        .tabs label{
-            padding: 20px;
-            /* background-color: #E5B95F; */
-            border-radius: 25px;
-        }
+      .tabs input[for="dis"] {
+        background-color: #e5b95f;
+      }
 
-        .tabs input[for="dis"]{
-            background-color: #E5B95F;
-        }
+      .tabs .tab {
+        width: 100%;
+        padding: 25px;
+        order: 1;
+        display: none;
+      }
+      .tab {
+        /* border: 1px solid red; */
+        /* width: 100%; */
+        margin: auto;
+      }
+      .tabs input[type="radio"]:checked + label + .tab {
+        display: block;
+      }
 
-        .tabs .tab{
-            width: 100%;
-            padding: 25px;
-            order: 1;
-            display: none;
-        }
-        .tab{
-            /* border: 1px solid red; */
-            /* width: 100%; */
-            margin: auto;
-            
-        }
-        .tabs input[type='radio']:checked + label + .tab{
-            display: block;
-        }
-
-        .tabs input[type='radio']:checked + label {
-            background-color: #E5B95F;
-        }
-        .tabs label:hover{
-            background-color: #E5B95F;
-        }
-        #footer{
-            margin-top: 100px;
-        }
-        #review{
-            display: flex;
-            justify-content: space-between;
-        }
-        #customer{
-            font-size: 30px;
-        }
+      .tabs input[type="radio"]:checked + label {
+        background-color: #e5b95f;
+      }
+      .tabs label:hover {
+        background-color: #e5b95f;
+      }
+      #footer {
+        margin-top: 100px;
+      }
+      #review {
+        display: flex;
+        justify-content: space-between;
+      }
+      #customer {
+        font-size: 30px;
+      }
     </style>
-</head>
-<body>
-    <div id="navbar">
+  </head>
+  <body>
+    <div id="navbar"></div>
 
-    </div>
-
-    <div id="p1">
-
-    </div>
+    <div id="p1"></div>
 
     <div class="tabs">
-        <input type="radio" id="dis" name="discription" checked="checked">
-        <label for="dis">DESCRIPTION</label>
-        <div class="tab">
-            <p>Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3 carefully curated beauty bags featuring 6 glam goodies each inside The Beauty Bundle July Fab Bag.</p>
-            <br>
-            <br>
-            <h4>Makeup 1: Teen Teen 5D Pretty Eye Shadow (Choose any 1)</h4>
-            <p>1. Teen Teen 5D Pretty Eye Shadow - Flamingo Pink </p>
-            <p>2. Teen Teen 5D Pretty Eye Shadow - Gold Rush </p>
-            <p>3. Teen Teen 5D Pretty Eye Shadow - Rusty Copper</p>
-            <br>
-            <br>
-            <p>And choose the bundle of your choice:
-            </p>
-            <br>
-            <br>
-            <h4>Beauty Bundle Bag 1 includes:</h4>
-            <p>
-                St. D'vencé Tea Tree Face Wash
-                The Soap Company India Saffron Soothing Sorbet OR The Soap Company India Musk Body Wash
-                Baiser India Nourishing Lip Oil OR Coco Soul Hair & Scalp Cleanser
-                Keeva Naturals Scuba Dive Shower Gel OR Kronoklay Body Butter OR Mom's Therapy Coffee Body Scrub OR Organic Harvest Neem Face Wash OR Plum BodyLovin' Bestsellin' Duo Minis Kit OR Skinlicious Cucumber Beauty Gel for Skin and Hair
-                Tejas Blends Lavender Foot Mist
-            </p>
-            <br>
-            <h4>Beauty Bundle Bag 2 includes:</h4>
-            <p>St. D'vencé Tea Tree Face Wash</p>
-            <p>Coco soul nourishing body lotion</p>
-            <p>Plum E-Luminence Mega Hydration Mini Kit</p>
-            <p>Tejas Blends Enriching night cream </p>
-            <p>Tejas Blends Lavender Foot Mist </p>
-            <br>
-            <h4>Beauty Bundle Bag 3 includes:</h4>
-            <p>The Soap Company India Midnight Love Body Cologne</p>
-            <p>Sebamed Moisturizing Cream</p>
-            <p>Plum Fun in the Sun Duo (Scrub + SPF 50) (Minis)</p>
-            <p>Tejas Blends Enriching night cream </p>
-            <p>Tejas Blends Lavender Foot Mist </p>
-            <br>
-            <p style="font-style: italic;">*Two offers cannot be clubbed. Choice will be available on the order confirmation page, on first-come, first-served basis. Bags shown are indicative and color may differ.</p>
-        </div> 
-        
-        
-        <input type="radio" id="vp" name="discription" >
-        <label for="vp">VIEW PLANS</label>
-        <div class="tab">
+      <input type="radio" id="dis" name="discription" checked="checked" />
+      <label for="dis">DESCRIPTION</label>
+      <div class="tab">
+        <p>
+          Get ready to Pick'n'Roll. Put your beauty instincts to the test and
+          choose between 3 carefully curated beauty bags featuring 6 glam
+          goodies each inside The Beauty Bundle July Fab Bag.
+        </p>
+        <br />
+        <br />
+        <h4>Makeup 1: Teen Teen 5D Pretty Eye Shadow (Choose any 1)</h4>
+        <p>1. Teen Teen 5D Pretty Eye Shadow - Flamingo Pink</p>
+        <p>2. Teen Teen 5D Pretty Eye Shadow - Gold Rush</p>
+        <p>3. Teen Teen 5D Pretty Eye Shadow - Rusty Copper</p>
+        <br />
+        <br />
+        <p>And choose the bundle of your choice:</p>
+        <br />
+        <br />
+        <h4>Beauty Bundle Bag 1 includes:</h4>
+        <p>
+          St. D'vencé Tea Tree Face Wash The Soap Company India Saffron Soothing
+          Sorbet OR The Soap Company India Musk Body Wash Baiser India
+          Nourishing Lip Oil OR Coco Soul Hair & Scalp Cleanser Keeva Naturals
+          Scuba Dive Shower Gel OR Kronoklay Body Butter OR Mom's Therapy Coffee
+          Body Scrub OR Organic Harvest Neem Face Wash OR Plum BodyLovin'
+          Bestsellin' Duo Minis Kit OR Skinlicious Cucumber Beauty Gel for Skin
+          and Hair Tejas Blends Lavender Foot Mist
+        </p>
+        <br />
+        <h4>Beauty Bundle Bag 2 includes:</h4>
+        <p>St. D'vencé Tea Tree Face Wash</p>
+        <p>Coco soul nourishing body lotion</p>
+        <p>Plum E-Luminence Mega Hydration Mini Kit</p>
+        <p>Tejas Blends Enriching night cream</p>
+        <p>Tejas Blends Lavender Foot Mist</p>
+        <br />
+        <h4>Beauty Bundle Bag 3 includes:</h4>
+        <p>The Soap Company India Midnight Love Body Cologne</p>
+        <p>Sebamed Moisturizing Cream</p>
+        <p>Plum Fun in the Sun Duo (Scrub + SPF 50) (Minis)</p>
+        <p>Tejas Blends Enriching night cream</p>
+        <p>Tejas Blends Lavender Foot Mist</p>
+        <br />
+        <p style="font-style: italic">
+          *Two offers cannot be clubbed. Choice will be available on the order
+          confirmation page, on first-come, first-served basis. Bags shown are
+          indicative and color may differ.
+        </p>
+      </div>
 
-            <div class="sub">
-                <h3>Rs. 599.00</h3>
-                <h5>/per month</h5>
-            </div>
-            <div id="sub3">
-                <h5>ONE TIME PAYMENT</h5>
-                <h3>Rs. 599.00</h3>
-            </div>
-            <div id="sub4">
-                <button id="cartBtn">ADD TO CART</button>
-            </div>
-
-        </div> 
-
-
-        <input type="radio" id="rp" name="discription" >
-        <label for="rp">RETURNS POLICY</label>
-        <div class="tab">
-            <ul>
-                <li>Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or Money-Back Guarantee</li>
-                <li>For more details, please see our Policy here.</li>
-                <li>Should you have any questions regarding this product, please feel free to get in touch with our friendly Customer Experience Team at crew@fabbag.com within 48 hours of receiving the shipment or call us at 022-4896-7878 Mon - Fri, 9am - 7pm.</li>
-            </ul>
+      <input type="radio" id="vp" name="discription" />
+      <label for="vp">VIEW PLANS</label>
+      <div class="tab">
+        <div class="sub">
+          <h3>Rs. 599.00</h3>
+          <h5>/per month</h5>
         </div>
-        
-        
-        <input type="radio" id="cr" name="discription" >
-        <label for="cr">CUSTOMER REVIEWS</label>
-        <div class="tab">
-            <p id="customer">Customer Reviews</p>
-            <div id="review">
-                <p>No reviews yet</p>
-                <a href="#">Write a review</a>
-            </div>
-        </div> 
+        <div id="sub3">
+          <h5>ONE TIME PAYMENT</h5>
+          <h3>Rs. 599.00</h3>
+        </div>
+        <div id="sub4">
+          <button id="cartBtn">ADD TO CART</button>
+        </div>
+      </div>
 
+      <input type="radio" id="rp" name="discription" />
+      <label for="rp">RETURNS POLICY</label>
+      <div class="tab">
+        <ul>
+          <li>
+            Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or
+            Money-Back Guarantee
+          </li>
+          <li>For more details, please see our Policy here.</li>
+          <li>
+            Should you have any questions regarding this product, please feel
+            free to get in touch with our friendly Customer Experience Team at
+            crew@fabbag.com within 48 hours of receiving the shipment or call us
+            at 022-4896-7878 Mon - Fri, 9am - 7pm.
+          </li>
+        </ul>
+      </div>
+
+      <input type="radio" id="cr" name="discription" />
+      <label for="cr">CUSTOMER REVIEWS</label>
+      <div class="tab">
+        <p id="customer">Customer Reviews</p>
+        <div id="review">
+          <p>No reviews yet</p>
+          <a href="#">Write a review</a>
+        </div>
+      </div>
     </div>
 
     <!-- <div class="footer">
 
     </div> -->
-</body>
+  </body>
 </html>
-<script type = "module">
+<script type="module">
+  import navbar from "./components/navport.js";
 
-import navbar from "./components/navport.js"
+  document.querySelector("#navbar").innerHTML = navbar();
 
-document.querySelector("#navbar").innerHTML = navbar();
+  let cartcount = JSON.parse(localStorage.getItem("cart")) || [];
 
-let cartcount=JSON.parse(localStorage.getItem("cart")) || []
+  console.log(cartcount.length);
 
-console.log(cartcount.length)
+  let count = document.querySelector("#count");
+  count.innerText = cartcount.length;
 
-let count=document.querySelector("#count")
-count.innerText= cartcount.length
+  // import footer from "./components/footer.js"
 
-// import footer from "./components/footer.js"
+  // document.querySelector(".footer").innerHTML = footer();
 
-// document.querySelector(".footer").innerHTML = footer();
-    
+  // let product = ;
+  let h = JSON.parse(localStorage.getItem("product"));
+  // h.push(product);
+  let t = [h];
+  console.log(t);
+  let con = document.getElementById("p1");
 
-    // let product = ;
-    let h = JSON.parse(localStorage.getItem("product"))
-    // h.push(product);
-    let t = [h]
-    console.log(t);
-    let con = document.getElementById("p1")
+  let append2 = (data) => {
+    t.forEach((x) => {
+      let { image, product_name, price } = x;
+      let div1 = document.createElement("div");
+      div1.setAttribute("id", "box");
+      let home = document.createElement("a");
+      home.innerText = "Home";
+      home.setAttribute("href", "./index.html");
+      home.setAttribute("id", "home");
+      let img = document.createElement("img");
+      img.setAttribute("id", "p_img");
+      img.src = image;
+      let name = document.createElement("h1");
+      let desc = document.createElement("p");
+      desc.innerText =
+        "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...";
+      desc.setAttribute("id", "des");
 
-    let append2=(data)=>{
-        t.forEach((x)=>{
-            let {image,product_name,price}=x ;
-            let div1 = document.createElement("div");
-            div1.setAttribute("id","box")
-            let home = document.createElement("a")
-            home.innerText = "Home"
-            home.setAttribute("href", "./index.html");
-            home.setAttribute("id","home");
-            let img = document.createElement("img")
-            img.setAttribute("id","p_img");
-            img.src = image
-            let name = document.createElement("h1");
-            let desc = document.createElement("p");
-            desc.innerText = "Get ready to Pick'n'Roll. Put your beauty instincts to the test and choose between 3...";
-            desc.setAttribute("id", "des");
+      //social media
+      let social = document.createElement("div");
+      social.setAttribute("id", "social");
 
-            //social media
-            let social = document.createElement("div")
-            social.setAttribute("id", "social");
+      //twitter
+      let twitter = document.createElement("a");
+      twitter.setAttribute(
+        "href",
+        ` https://twitter.com/share?url=https://www.fabbag.com/products/subscribe&text=The%20Beauty%20Bundle%20July%20Fab%20Bag`
+      );
+      let icon1 = document.createElement("div");
+      icon1.innerHTML = `<i class="bi bi-twitter"></i>`;
+      twitter.append(icon1);
 
-            //twitter
-            let twitter = document.createElement("a");
-            twitter.setAttribute("href", ` https://twitter.com/share?url=https://www.fabbag.com/products/subscribe&text=The%20Beauty%20Bundle%20July%20Fab%20Bag`)
-            let icon1 = document.createElement("div");
-            icon1.innerHTML = `<i class="bi bi-twitter"></i>`
-            twitter.append(icon1);
-            
-            //facebook
-            let facebook = document.createElement("a");
-            facebook.setAttribute("href", `https://www.facebook.com/sharer/sharer.php?u=https://www.fabbag.com/products/subscribe`);
-            let icon2 = document.createElement("div");
-            icon2.innerHTML = `<i class="bi bi-facebook"></i>`
-            facebook.append(icon2);
-            
-            //Google
-            let google = document.createElement("a");
-            google.setAttribute("href", `https://plus.google.com/share?url=https://www.fabbag.com/products/subscribe`);
-            let icon3 = document.createElement("div");
-            icon3.innerHTML = `<i class="bi bi-google"></i>`
-            google.append(icon3);
-            
-            social.append(twitter, facebook, google)
+      //facebook
+      let facebook = document.createElement("a");
+      facebook.setAttribute(
+        "href",
+        `https://www.facebook.com/sharer/sharer.php?u=https://www.fabbag.com/products/subscribe`
+      );
+      let icon2 = document.createElement("div");
+      icon2.innerHTML = `<i class="bi bi-facebook"></i>`;
+      facebook.append(icon2);
 
-            name.innerText = "The Beauty Bundle July Fab Bag"
-            let btn = document.createElement("button");
-            btn.innerText = "Add to cart"
-            btn.setAttribute("id", "btn")
-            let div2 = document.createElement("div");
-            
-            div2.setAttribute("class", "write")
-            let s = document.createElement("h2");
-            s.innerText = `Rs. ${price}`
+      //Google
+      let google = document.createElement("a");
+      google.setAttribute(
+        "href",
+        `https://plus.google.com/share?url=https://www.fabbag.com/products/subscribe`
+      );
+      let icon3 = document.createElement("div");
+      icon3.innerHTML = `<i class="bi bi-google"></i>`;
+      google.append(icon3);
 
+      social.append(twitter, facebook, google);
 
-            div2.append(home, name, s, desc, btn, social)
-            div1.append(img, div2)
-            con.append(div1);
-        })
+      name.innerText = "The Beauty Bundle July Fab Bag";
+      let btn = document.createElement("button");
+      btn.innerText = "Add to cart";
+      btn.setAttribute("id", "btn");
+      let div2 = document.createElement("div");
 
+      div2.setAttribute("class", "write");
+      let s = document.createElement("h2");
+      s.innerText = `Rs. ${price}`;
+
+      div2.append(home, name, s, desc, btn, social);
+      div1.append(img, div2);
+      con.append(div1);
+    });
+  };
+  append2(t);
+
+  let cartData = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(typeof cartData);
+  document.querySelector("#btn").addEventListener("click", () => {
+    let flag = 0;
+    cartData.forEach(({ id }) => {
+      if (id == h.id) {
+        alert("product already in your cart");
+        flag = 1;
+      }
+    });
+    if (flag == 0) {
+      cartData.push(h);
+      localStorage.setItem("cart", JSON.stringify(cartData));
+      alert("product added successfuly");
+      window.location.href = "cart.html";
     }
-    append2(t);
-
-    let cartData=JSON.parse(localStorage.getItem("cart")) || []
-console.log(typeof cartData)
-document.querySelector("#btn").addEventListener("click",()=>{
-    let flag=0
-    cartData.forEach(({id})=>{
-        if(id==h.id)
-        {
-            alert("product already in your cart")
-            flag=1
-        }
-       
-    })
-    if(flag==0)
-    {
-        cartData.push(h)
-        localStorage.setItem("cart",JSON.stringify(cartData))
-        alert("product added successfuly")
-        window.location.href="cart.html"
-    }
-   
-   
-})
-   
+  });
 </script>
