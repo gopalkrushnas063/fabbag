@@ -1,0 +1,244 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./search.css">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles/navbar.css">
+</head>
+<body>
+  <div id="navbar">
+
+  </div>
+    
+    <!-- Button trigger modal -->
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+        </div>
+        <div class="modal-body">
+         
+            <div id="container">
+             
+                <div id="icon_div"> <div class="modal-footer">
+                
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <span id="delete_icon"><i class="fa-solid fa-xmark"></i></span></button>
+          
+        </div>
+               
+             </div>
+                 <div id="box">
+                  
+                  <form action="">
+                 <h5 id="grey">WHAT ARE YOU LOOKING FOR ?</h5>
+                
+                 <input id="search_box" autocomplete="off" placeholder="search product" type="text"> <span id="search_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </form>
+                <div id="results">
+
+                </div>
+             </div>
+             </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+   let Navbar=document.getElementById("navbar")
+    let minibox=  document.getElementById("search_box")
+    
+    minibox.onclick=function() {
+        minibox.style.borderWidth="1px"
+         minibox.style.borderColor="black"
+         
+    }
+
+  
+  //  import navbar from "./components/navbar.js"
+  
+  //  Navbar.innerHTML=navbar()
+
+   
+
+   
+  document.getElementById('search_icon').addEventListener('click',searchfun)
+
+  function searchfun(){
+    document.getElementById("results").innerHTML=null;
+    document.querySelector(".modal-body").style.display="block"
+    // console.log('open')
+  }
+  document.getElementById("delete_icon").onclick=function() {
+   console.log("close")
+    // document.querySelector(".modal-body").style.transform='translateY(-300px)';
+    // document.querySelector(".modal-body").style.transition='0.5s';
+    document.querySelector(".modal-body").style.display='none'
+
+    window.location.href = "./index.html"
+}
+
+
+let arrData= [
+   {
+      id: 1,
+      name: "SUGAR Born To Wing Gel Eyeliner - 03 Brown Sugar (Walnut Brown)",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/8904320702793A.jpg?v=1574400002", 
+      
+      Price: "599.00 ",
+   
+    },
+
+    {
+      id: 2,
+      name: "SUGAR Uptown Curl Lengthening Mini Mascara - 01 Black Beauty (Black) + SUGAR Wingman Waterproof Microliner - 01 I'll Be Black (Black)",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/SUGAR-Uptown-Curl-mini-mascara-_-SUGAR-Wingman-Waterproof-Microliner-01-I_ll-Be-Black-_Black_b4408b1d-058e-423d-a933-18d206385730.png?v=1592831244", 
+      
+      Price: "799.00 ",
+   
+    },
+
+    {
+      id: 3,
+      name: "SUGAR Aquaholic Priming Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Aquaholic-Priming-Moisturizer-_-Open-Prdocut_Pigment.jpg?v=1586794134", 
+      
+      Price: "699.00 ",
+   
+    },
+
+    {
+      id: 3,
+      name: "SUGAR Aquaholic Priming Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Aquaholic-Priming-Moisturizer-_-Open-Prdocut_Pigment.jpg?v=1586794134", 
+      
+      Price: "699.00 ",
+   
+    },
+
+    {
+      id: 4,
+      name: "SUGAR Bling Leader Illuminating Moisturizer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/WBG_01-Gold-Diggin__02-2_36f47c3b-bf42-4ffd-aa7f-7a3971e3ff6e.jpg?v=1579677440", 
+      
+      Price: "699.00 ",
+    },
+
+    {
+      id: 5,
+      name: "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/WBG_01-Gold-Diggin__02-2_36f47c3b-bf42-4ffd-aa7f-7a3971e3ff6e.jpg?v=1579677440",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Powder-Play-_translucent.png?v=1579676442", 
+      
+      Price: "599.00",
+    },
+
+    {
+      id: 6,
+      name: "SUGAR Powder Play Banana Compact",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Powder-Play-_Banana_-Open-Product-_-swatcht.png?v=1579756892", 
+      
+      Price: "599.00",
+    },
+
+    {
+      id: 7,
+      name: "SUGAR The Most Eligiblur Smoothing Primer",
+      image:
+        "https://cdn.shopify.com/s/files/1/0052/7551/6995/products/9D5A7539.jpg?v=1586794313", 
+      
+      Price: "799.00",
+    },
+]
+
+//let query=document.getElementById("search_box");
+//query.addEventListener('click',inputfun)
+// function inputfun(){
+// console.log("ffdfd")
+// }
+
+
+document.getElementById("search_box").oninput=function() {
+  
+   let query=document.getElementById("search_box").value;
+   if(query==="sugar") {
+  let url=`https://rizofabbag.herokuapp.com/fabData?q=${query}`
+  getData(url)
+document.getElementById("search_box").style.border="none"
+   }
+   else {
+    console.log("not working")
+   }
+}
+
+
+async function getData(url) {
+  let res=await fetch(url);
+  let data= await res.json();
+  appendfun(data)
+}
+
+function appendfun(products) {
+  document.getElementById("results").innerHTML=null;
+  products.forEach((el,i)=>{
+    let img=document.createElement("img")
+    img.style.width="50px"
+    img.style.height="70px"
+    img.src=el.image;
+    img.style.cursor = "pointer"
+    let name=document.createElement("p")
+    name.innerText=el.name;
+    name.style.cursor = "pointer"
+    name.setAttribute("class","effect")
+    name.style.fontFamily="sans-sherif"
+    let price=document.createElement("p")
+    price.innerText=el.Price;
+    price.style.cursor = "pointer"
+    price.setAttribute("class","effect")
+    let box=document.createElement("div")
+    box.style.display="flex"
+    box.style.width="300px"
+    box.style.gap="15px"
+    box.style.cursor = "pointer"
+    box.addEventListener("click",function(){
+      sendData(el)
+    })
+    box.append(img,name,price)
+    setTimeout(()=>{
+     
+      document.getElementById("results").append(box)
+    },500)
+    
+  })
+}
+
+function sendData(product) {
+  localStorage.setItem("Product",JSON.stringify(product))
+  window.location.href="detailed.html"
+}
+
+   
+</script>
+

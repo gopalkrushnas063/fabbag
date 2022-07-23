@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fab Bag Payment Confirmation</title>
+    <style>
+      .optPage {
+        width: 30%;
+        height: 290px;
+        padding-top: 10px;
+        margin: auto;
+        text-align: center;
+        margin-top: 100px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      #msg{
+        width: 70%;
+        margin: auto;
+        border: 1px solid #c5ddc6;
+        background-color:#c5ddc6;
+        color: #34493c;
+        margin-bottom: 10px;
+      }
+      input[type=number]{
+        width: 68%;
+        height: 30px;
+        text-align: center;
+        font-size: 18px;
+        flex: 0 0 200px;
+      }
+      input[type=submit]{
+        width: 70%;
+        height: 37px;
+        text-align: center;
+        background-color: #6564ea;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="optPage">
+      <form>
+        <h1>OTP Verification</h1>
+        <div id="msg">
+          <p>We've sent a verification code to your registered Mobile Number - ******7451</p>
+
+        </div>
+        <input id="otp" type="number" placeholder="Enter OTP Here" />
+        <br />
+        <br />
+        <input type="submit" value="Submit"/>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", otpAuth);
+  function otpAuth() {
+    event.preventDefault();
+    let OTP = document.querySelector("#otp").value;
+    if (OTP == 1234) {
+      alert("OTP Verified Successful 🎉 🎉 🎉");
+      window.location.href = "orderSuccess.html";
+    } else {
+      alert("Entered OTP is Incorrect");
+    }
+  }
+  
+</script>
