@@ -23,7 +23,7 @@ India's largest beauty subscription service. Receive amazing sample/full-size pr
 
 
 
-  # Deployed Link :-
+  # Deployed Netlify Link :-
     https://sunny-macaron-712b25.netlify.app/
     
   
